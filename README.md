@@ -4,7 +4,8 @@ import math
 lower_bound = int(input("Enter Lower bound:- "))
 upper_bound = int(input("Enter Upper bound:- "))
 random_number = random.randint(lower_bound, upper_bound)
-print("\nYou have only", round(math.log(upper_bound - lower_bound + 1, 2)), "chances to guess the integer!\n")
+int p=round(math.log(upper_bound - lower_bound + 1, 2))
+print("\nYou have only", p, "chances to guess the integer!\n")
 
 count = 0
 while count < math.log(upper_bound - lower_bound + 1, 2):
